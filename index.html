@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AUREN — modern essentials, considered design.">
+  <title>AUREN — Modern Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS ABOVE ₹1,999</div>
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="wordmark" href="#">AUREN<span>®</span></a>
+    <nav id="nav">
+      <a href="#shop">SHOP</a><a href="#collections">COLLECTIONS</a><a href="#story">OUR STORY</a>
+    </nav>
+    <button class="cart-trigger" id="cartOpen">BAG <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW EVERYDAY</p>
+        <h1>Quietly<br><em>distinct.</em></h1>
+        <p class="hero-sub">Thoughtful essentials. Refined silhouettes.<br>Made to move with you.</p>
+        <a class="button button-dark" href="#shop">DISCOVER THE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Minimal monochrome fashion editorial"></div>
+      <div class="hero-index">01 — 03 <span>NEW SEASON</span></div>
+    </section>
+
+    <section class="intro" id="collections">
+      <p class="eyebrow">A MORE CONSIDERED WARDROBE</p>
+      <h2>Fewer things.<br><em>Better choices.</em></h2>
+      <p>Versatile pieces, clean lines and a modern point of view. Discover the pieces you'll reach for again and again.</p>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured pieces</h2></div>
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="All">ALL</button>
+          <button class="filter" data-filter="Men">MEN</button>
+          <button class="filter" data-filter="Women">WOMEN</button>
+          <button class="filter" data-filter="Accessories">ACCESSORIES</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="statement" id="story">
+      <div class="statement-image"></div>
+      <div class="statement-copy">
+        <p class="eyebrow">THE AUREN APPROACH</p>
+        <h2>Designed for<br><em>real life.</em></h2>
+        <p>We believe personal style should feel effortless. AUREN is a study in simplicity: considered details, timeless shapes and everyday confidence.</p>
+        <a href="#shop" class="text-link">EXPLORE THE EDIT ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark footer-mark" href="#">AUREN<span>®</span></a>
+    <p>MODERN FASHION. CONSIDERED ALWAYS.</p>
+    <div class="footer-bottom"><span>© 2026 AUREN. DEMO STORE.</span><span>INSTAGRAM&nbsp;&nbsp; CONTACT</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><h2>Your bag</h2><button id="cartClose" aria-label="Close bag">✕</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Your bag is currently empty.</p></div>
+    <div class="drawer-foot">
+      <div class="subtotal"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+      <p class="cart-note">Shipping and final details will be confirmed on WhatsApp.</p>
+      <button class="button button-dark checkout" id="checkout">ORDER ON WHATSAPP ↗</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
